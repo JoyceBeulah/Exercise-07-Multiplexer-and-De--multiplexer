@@ -102,11 +102,12 @@ endmodule
 ### RTL LOGIC 
 MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/7091f3ea-0604-444c-8707-e41d6b671420)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/9aac17e9-37d8-40fc-9c14-fa85f2bdf80a)
+
 
 DE-MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/4620f065-5bc6-4d4f-98f9-240343c50251)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/0ecf9749-323f-479d-902d-9287439521fc)
 
 
 
@@ -115,9 +116,12 @@ DE-MULTIPLEXER
 ### TIMING DIGRAMS  
 MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/3ef4552f-de6c-44a8-8043-70a8bbe5d107)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/22edfbc4-08f3-421c-8e5a-9bd570bdc345)
+
 
  DE-MULTIPLEXER
+ 
+ ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/eb1e32f9-ca64-4488-a0c4-d674cd1edfbb)
 
 
 
@@ -137,3 +141,4 @@ DE-MULTIPLEXER
 
 
 ### RESULTS 
+Thus the program to design multiplexer and de-multiplexer is successfully completed.
