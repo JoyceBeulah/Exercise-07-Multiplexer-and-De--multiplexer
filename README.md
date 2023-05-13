@@ -60,6 +60,7 @@ Developed by: R.Joyce Beulah
 RegisterNumber:  212222230058
 */
 MULTIPLEXER
+
 ```
 module multi (s0,s1,a0,a1,a2,a3,y);
 input s0,s1,a0,a1,a2,a3;
@@ -75,6 +76,7 @@ or (y,a,b,c,d);
 endmodule
 ```
 DE-MULTIPLEXER
+
 ```
 module demul(y0,y1,y2,y3,s0,s1,i);
 input s0,s1,i;
@@ -89,22 +91,37 @@ and(y3,i,s0,s1);
 endmodule
 ```
 
-### RTL LOGIC  
+### RTL LOGIC 
+MULTIPLEXER
+
 ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/7091f3ea-0604-444c-8707-e41d6b671420)
+
+DE-MULTIPLEXER
+
 ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/4620f065-5bc6-4d4f-98f9-240343c50251)
-9
+
 
 
 
 
 ### TIMING DIGRAMS  
+MULTIPLEXER
+
 ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/3ef4552f-de6c-44a8-8043-70a8bbe5d107)
 
+ DE-MULTIPLEXER
 
 
 
 
 ### TRUTH TABLE 
+MULTIPLEXER
+
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/58619e15-95ce-44ab-9344-c89b3333c2fc)
+
+DE-MULTIPLEXER
+
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/693dd8a8-19c6-4efc-9a96-3bae19f374f8)
 
 
 
