@@ -70,44 +70,46 @@ RegisterNumber:  212222230058
 MULTIPLEXER
 
 ```
-module multi (s0,s1,a0,a1,a2,a3,y);
-input s0,s1,a0,a1,a2,a3;
-output y;
-wire a,b,c,d,s0bar,s1bar;
-not (s0bar,s0);
-not (s1bar,s1);
-and (a,s0,s1,a3);
-and (b,s0bar,s1,a2);
-and (c,s0,s1bar,a1);
-and (d,s0bar,s1bar,a0);
-or (y,a,b,c,d);
+module mul(d0,d1,d2,d3,a,b,q);
+input d0,d1,d2,d3,a,b;
+output q;
+wire l,m,n,o,abar,bbar;
+not(abar,a);
+not(bbar,b);
+and(l,d0,abar,bbar);
+and(m,d1,abar,b);
+and(n,d2,a,bbar);
+and(o,d3,a,b);
+or(q,l,m,n,o);
 endmodule
+
 ```
 DE-MULTIPLEXER
 
 ```
-module demul(y0,y1,y2,y3,s0,s1,i);
-input s0,s1,i;
+module demul(d,a,b,y0,y1,y2,y3);
+input d,a,b;
 output y0,y1,y2,y3;
-wire sbar,s1bar;
-nor(sbar,s0);
-nor(s1bar,s1);
-and(y0,i,sbar,s1);
-and(y1,i,sbar,s1bar);
-and(y2,i,s0,s1bar);
-and(y3,i,s0,s1);
+wire abar,bbar;
+not(abar,a);
+not(bbar,b);
+and(y0,d,abar,bbar);
+and(y1,abar,b,d);
+and(y2,a,bbar,d);
+and(y3,a,b,d);
 endmodule
 ```
 
 ### RTL LOGIC 
 MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/9aac17e9-37d8-40fc-9c14-fa85f2bdf80a)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/2f66118e-4df2-4652-9eb9-7b64c323d566)
+
 
 
 DE-MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/0ecf9749-323f-479d-902d-9287439521fc)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/e759c71a-0de1-4805-9fe9-1364ba687d42)
 
 
 
@@ -116,12 +118,14 @@ DE-MULTIPLEXER
 ### TIMING DIGRAMS  
 MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/22edfbc4-08f3-421c-8e5a-9bd570bdc345)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/097ecf8e-dbbb-4e6b-9d06-06fc39f97546)
+
 
 
  DE-MULTIPLEXER
  
- ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/eb1e32f9-ca64-4488-a0c4-d674cd1edfbb)
+ ![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/4f661462-37d7-45a3-b522-47985c898c6e)
+
 
 
 
@@ -129,12 +133,11 @@ MULTIPLEXER
 ### TRUTH TABLE 
 MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/58619e15-95ce-44ab-9344-c89b3333c2fc)
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/59f303e1-d00d-469b-ade7-bcc6f216c4e2)
 
 DE-MULTIPLEXER
 
-![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/693dd8a8-19c6-4efc-9a96-3bae19f374f8)
-
+![image](https://github.com/JoyceBeulah/Exercise-07-Multiplexer-and-De--multiplexer/assets/118343698/9355eb7e-3174-4cfd-996f-059a74b502bc)
 
 
 
